@@ -10,10 +10,10 @@
 DefinitionBlock ("", "SSDT", 2, "ACDT", "BRG0", 0x00000000)
 {
     // Fix this path
-    External (_SB_.PCI0.PEG1.PEGP, DeviceObj)
+    External (_SB_.PCI0.IOU0.PXS1, DeviceObj)
 
     // Fix this path
-    Scope (\_SB.PCI0.PEG1.PEGP)
+    Scope (\_SB_.PCI0.IOU0.PXS1)
     {
         /*
          * This is a PCI bridge device present on PEGP.
